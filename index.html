@@ -26,16 +26,16 @@
     <main class="min-h-screen bg-[#010313]   bg-center flex items-center justify-center">
 
         <!-- first page -->
-        <section class="home  text-white bg-slate-600 rounded-xl p-28 hidden">
+        <section id="home-screen" class="  text-white bg-slate-600 rounded-xl p-28 ">
             <div class="text-center">
                 <h1 class="text-7xl">ALPHABET CLASH</h1>
                 <p class="text-xl my-8">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="btn ">Play Now</button>
+                <button onclick="play()" class="btn ">Play Now</button>
             </div>
         </section>
 
         <!-- play ground -->
-        <section class="play-ground bg-slate-600 rounded-xl p-20 hidden">
+        <section id="play-ground" class="hidden  bg-slate-600 rounded-xl p-20 ">
             <!-- play ground container -->
             <div class="flex flex-col items-center gap-20">
                 <!-- screen start-->
@@ -110,7 +110,7 @@
         </section>
 
         <!-- final scores start-->
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section class="hidden score flex justify-center items-center min-h-screen ">
             <div class="text-white
             text-center border bg-slate-600 rounded-2xl p-10">
                 <h1 class="text-8xl"><span class="font-extrabold">Score:</span>
@@ -121,6 +121,11 @@
             </div>
         </section>
     </main>
+
+
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/script.js"></script>
+
 </body>
 
 </html>
